@@ -26,7 +26,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="button" class="btn btn-success">Войти</button>
+                        <button type="button" class="btn btn-success" onclick="auth();">Войти</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Отмена</button>
                     </div>
                 </form>

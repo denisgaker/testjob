@@ -75,3 +75,37 @@ function addNewTask()
         });
     }
 }
+
+function auth()
+{
+    console.log('Попытка авторизации');
+
+    let authData = {
+        "login": $('#authInp_login').val(),
+        "pssw": $('#authInp_password').val(),
+    };
+
+    $.ajax({
+        url: "/testjob/helper/auth.php",
+        method: "POST",
+        dataType: "HTML",
+        data: authData,
+        success: function(data)
+        {
+            console.log('data: ', data);
+
+            if (data === "not bad")
+            {
+                document.cookie = "isAdmin=true";
+                alert('Привет, повелитель задач');
+
+                console.log(document.cookie);
+            }
+            else
+            {
+                document.cookie = "isAdmin=false";
+                alert('Это фиаско, братан...');
+            }
+        }
+    });
+}
