@@ -1,0 +1,67 @@
+
+/*Модальное окно*/
+.modal_addNewTask > .modal-dialog,
+.modal_editTask > .modal-dialog {max-width: 900px;}
+
+.modal_auth > .modal-dialog {max-width: 300px;}
+
+h5.modal-title {
+    width: 100%;
+    text-align: center;
+}
+
+.btnWrap {
+    width: 100%;
+    text-align: center;
+}
+
+.form-check {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto 10px auto;
+}
+
+/*Добавление новой задачи | Модальное окно*/
+.modal textarea {min-height: 124px;}
+
+
+
+/*Блок отображения задачи*/
+.userTaskWrap {
+    margin: 30px auto;
+}
+
+.userInf,
+.userTask {
+    padding-top: 1rem;
+    border: 1px solid #e1e1e1;}
+
+.userInf {
+    border-right: none;
+}
+
+.userInf_title,
+.userTask_title {
+    display: block;
+    /* width: 110px; */
+    font-size: 0.8rem;
+}
+
+.userTaskWrap .btnWrap {padding: 10px 0 0 0;}
+
+.userTaskWrap .btnWrap .btn {margin: 0 0 0 10px;}
+
+
+
+/*Форма авторизации*/
+.authDanger {
+    padding: 1rem 1rem 0;
+    text-align: center;
+}
+
+.modal_auth h5 {text-align: left;}
+
+.modal_auth button:not(.close) {
+    width: 100%;
+    margin: 10px auto 0 auto;
+}
