@@ -17,8 +17,8 @@ $data_task = array(
     "task" => $_POST["task"]
 );
 
-$sql = mysqli_query($db_connect, "INSERT INTO `tasks` (`name`, `email`, `task`) VALUES ('{$data_task['name']}', '{$data_task['email']}', '{$data_task['task']}')");
-// $sql = mysqli_query($db_connect, "INSERT INTO `tasks` (`name`, `email`, `task`) VALUES ({$data_task['name']}, {$data_task['email']}, {$data_task['task']})");
+$sql = mysqli_query($db_connect, "INSERT INTO `tasks` (`name`, `email`, `task`) VALUES ('{$_POST["name"]}', '{$_POST["email"]}', '{$_POST["task"]}')");
+// $sql = mysqli_query($db_connect, "INSERT INTO `tasks` (`name`, `email`, `task`) VALUES ('{$data_task['name']}', '{$data_task['email']}', '{$data_task['task']}')");
 
 if ($sql)
 {
@@ -27,7 +27,15 @@ if ($sql)
     if ($sql_get)
     {
         $result = mysqli_fetch_array($sql_get);
-        echo json_encode($result);
+
+        $new_task = array(
+            "id" => $result["id"],
+            "name" => $result["name"],
+            "email" => $result["email"],
+            "task" => $result["task"]
+        );
+        
+        echo json_encode($new_task);
     }
     else echo 'Ошибка получения данных из БД';
 }
