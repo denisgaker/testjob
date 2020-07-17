@@ -1,4 +1,11 @@
 
+h1 {
+    margin: 30px auto 40px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+}
+
 /*Модальное окно*/
 .modal_addNewTask > .modal-dialog,
 .modal_editTask > .modal-dialog {max-width: 900px;}
@@ -50,6 +57,11 @@ h5.modal-title {
 .userTaskWrap .btnWrap {padding: 10px 0 0 0;}
 
 .userTaskWrap .btnWrap .btn {margin: 0 0 0 10px;}
+
+.noTasks {
+    padding-top: 1rem;
+    border: 1px solid #e1e1e1;
+}
 
 
 
