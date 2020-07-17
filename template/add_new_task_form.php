@@ -34,7 +34,7 @@
                             <label for="success" class="form-check-label">Нажимая на кнопку "Сохранить задачу" Вы соглашаетесь с <a href="">правилами</a> обработки персональных данных и <a href="">политикой</a> конфидециальности</label>
                         </div>
     
-                        <button type="button" class="btn btn-success">Сохранить задачу</button>
+                        <button type="button" class="btn btn-success" onclick="addNewTask();">Сохранить задачу</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Отмена</button>
                     </div>
                 </form>

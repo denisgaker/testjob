@@ -55,6 +55,7 @@ h5.modal-title {
 
 /*Форма авторизации*/
 .authDanger {
+    display: none;
     padding: 1rem 1rem 0;
     text-align: center;
 }
