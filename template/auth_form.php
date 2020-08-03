@@ -8,7 +8,7 @@
 
             <div class="modal-header">
                 <h5 class="modal-title" id="auth_label">Авторизация</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" onclick="auth.hide();">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -26,8 +26,8 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="button" class="btn btn-success" onclick="auth();">Войти</button>
-                        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Отмена</button>
+                        <button type="button" class="btn btn-success" onclick="auth.logIn();">Войти</button>
+                        <button type="button" class="btn btn-danger" onclick="auth.hide();">Отмена</button>
                     </div>
                 </form>
             </div>

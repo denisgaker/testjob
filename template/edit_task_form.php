@@ -14,18 +14,18 @@
                     <div class="col editTask">
                         <div class="form-group">
                             <label for="name">Имя</label>
-                            <input type="text" name="name_userInp" id="name_userInp" class="form-control name_userInp" placeholder="Иван" readonly>
+                            <input type="text" name="name_userInp_ET" id="name_userInp_ET" class="form-control name_userInp" placeholder="Иван" readonly>
                         </div>
     
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input name="email" type="email_userInp" id="email_userInp" class="form-control email_userInp" placeholder="test@mail.ru" aria-describedby="emailHelp" readonly>
+                            <input name="email" type="email_userInp_ET" id="email_userInp_ET" class="form-control email_userInp" placeholder="test@mail.ru" aria-describedby="emailHelp" readonly>
                         </div>
                     </div>
     
                     <div class="col editTask">
                         <label for="task">Задача</label>
-                        <textarea name="task_userInp" id="task_userInp" cols="30" rows="4" class="form-control task_userInp"></textarea>
+                        <textarea name="task_userInp_ET" id="task_userInp_ET" cols="30" rows="4" class="form-control task_userInp"></textarea>
                     </div>
     
                     <div class="form-group btnWrap">

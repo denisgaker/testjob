@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-capable" content="yes">
+    <meta name="robots" content="none">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="template/css/style.css">
+</head>
+<body>
+
+    <section>
+        <div class="clock">
+            <div class="hour hour12"></div>
+            <div class="hour hour3"></div>
+            <div class="hour hour6"></div>
+            <div class="hour hour9"></div>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>Тестовое задание | Список задач | Денис Гакер</h1>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Кнопки управления-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_addNewTask">Добавить новую задачу</button>
+                <button type="button" class="btn btn-secondary float-right" data-toggle="modal" data-target="#modal_auth">Авторизация</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Добавить новую задачу-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="modal fade modal_addNewTask" id="modal_addNewTask" tabindex="-1" role="dialog" aria-labelledby="addNewTask_label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addNewTask_label">Новая задача</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="" class="form-row form-addNewTask">
+                                <div class="col addNewTask">
+                                    <div class="form-group">
+                                        <label for="name">Имя</label>
+                                        <input type="text" name="name_userInp" id="name_userInp" class="form-control name_userInp" placeholder="Иван" required>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input name="email" type="email_userInp" id="email_userInp" class="form-control email_userInp" placeholder="test@mail.ru" aria-describedby="emailHelp" required>
+                                    </div>
+                                </div>
+                
+                                <div class="col addNewTask">
+                                    <label for="task">Задача</label>
+                                    <textarea name="task_userInp" id="task_userInp" cols="30" rows="4" class="form-control task_userInp"></textarea>
+                                </div>
+                
+                                <div class="form-group btnWrap">
+                                    <div class="form-check">
+                                        <input type="checkbox" name="success" id="success" class="form-check-input" checked>
+                                        <label for="success" class="form-check-label">Нажимая на кнопку "Сохранить задачу" Вы соглашаетесь с <a href="">правилами</a> обработки персональных данных и <a href="">политикой</a> конфидециальности</label>
+                                    </div>
+                
+                                    <button type="button" class="btn btn-success">Сохранить задачу</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Отмена</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Блок отображения задачи-->
+    <!-- <div class="container">
+        <div class="row userTaskWrap">
+        
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 userInf">
+                <p class="text-secondary name_p" id="name_p_1"><span class="userInf_title">Пользователь: </span> Денис</p>
+                <p class="text-secondary email_p" id="email_p_1"><span class="userInf_title">E-mail: </span>denisgaker@gmail.com</p>
+            </div>
+    
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 userTask">
+                <p class="task_p" id="task_p_1"><span class="userTask_title">Задача</span> Выполнить тестовое задание в рамках первого этапа собеседования в компании BeeJee</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d-flex flex-row-reverse btnWrap">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modal_editTask">Редактировать задачу</button>
+                <button class="btn btn-success">Отметить задачу как выполненную</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Форма редактирования задачи-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="modal fade modal_editTask" id="modal_editTask" tabindex="-1" role="dialog" aria-labelledby="editTask_label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editTask_label">Новая задача</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="" class="form-row form-editTask">
+                                <div class="col editTask">
+                                    <div class="form-group">
+                                        <label for="name">Имя</label>
+                                        <input type="text" name="name_userInp" id="name_userInp" class="form-control name_userInp" placeholder="Иван" readonly>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input name="email" type="email_userInp" id="email_userInp" class="form-control email_userInp" placeholder="test@mail.ru" aria-describedby="emailHelp" readonly>
+                                    </div>
+                                </div>
+                
+                                <div class="col editTask">
+                                    <label for="task">Задача</label>
+                                    <textarea name="task_userInp" id="task_userInp" cols="30" rows="4" class="form-control task_userInp"></textarea>
+                                </div>
+                
+                                <div class="form-group btnWrap">
+                                    <button type="button" class="btn btn-success">Сохранить задачу</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Отмена</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!--Форма авторизации-->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="modal fade modal_auth" id="modal_auth" tabindex="-1" role="dialog" aria-labelledby="auth_label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="bg-danger authDanger">
+                            <p class="text-white">Для совершения данного действия необходимо авторизоваться</p>
+                        </div>
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="auth_label">Авторизация</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="" class="form-auth">
+                                <div class="form-group">
+                                    <label for="authInp_login">Логин</label>
+                                    <input type="text" name="authInp_login" id="authInp_login" class="form-control authInp">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="authInp_password">Пароль</label>
+                                    <input type="text" name="authInp_password" id="authInp_password" class="form-control authInp">
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-success">Войти</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Отмена</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

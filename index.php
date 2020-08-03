@@ -1,3 +1,6 @@
+<?
+header("Content-Type: text/html; charset: utf-8");
+?>
 <? include 'template/header.php'; ?>
 
     <div class="container">
@@ -12,6 +15,7 @@
 
 <?
 include 'template/add_new_task_form.php';
+include 'template/edit_task_form.php';
 include 'template/auth_form.php';
 include 'template/footer.php';
 ?>

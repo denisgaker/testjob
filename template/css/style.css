@@ -39,7 +39,8 @@ h5.modal-title {
 }
 
 .userInf,
-.userTask {
+.userTask,
+.taskStatus {
     padding-top: 1rem;
     border: 1px solid #e1e1e1;}
 
@@ -50,7 +51,6 @@ h5.modal-title {
 .userInf_title,
 .userTask_title {
     display: block;
-    /* width: 110px; */
     font-size: 0.8rem;
 }
 
@@ -63,6 +63,143 @@ h5.modal-title {
     border: 1px solid #e1e1e1;
 }
 
+.adm_btn_wrap,
+.clock > span {
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.adm_btn_wrap {
+    display: none;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.adm_btn_wrap.available {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.adm_btn_wrap > button.adm_btn_done {margin: 0 10px 0;}
+
+.sort {margin: 50px auto 0 auto;}
+
+span.sort_title {line-height: 31px;}
+
+button.btn_sort {width: 100%;}
+
+
+
+.clock {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 2px solid var(--cyan);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.clock > .hour {
+    position: absolute;
+    background-color: var(--gray);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.clock > .hour.hour12 {
+    top: 5px;
+    left: 0;
+    right: 0;
+    width: 3px;
+    height: 7px;
+    margin: 0 auto;
+}
+
+.clock > .hour.hour3 {
+    top: calc(50% - 1.5px);
+    right: 5px;
+    width: 7px;
+    height: 3px;
+}
+
+.clock > .hour.hour6 {
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    width: 3px;
+    height: 7px;
+    margin: 0 auto;
+}
+
+.clock > .hour.hour9 {
+    top: calc(50% - 1.5px);
+    left: 5px;
+    width: 7px;
+    height: 3px;
+}
+
+.clock > .arrow {
+    width: 40px;
+    height: 2px;
+    margin: 50px 50px 0;
+    background-color: var(--primary);
+    z-index: 2;
+}
+
+.clock > span {
+    display: flex;
+    display: -webkit-flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.clock > .arrow {
+    transform-origin: left;
+    animation: rotate 60s infinite linear;
+}
+
+.userTaskWrap.is_done > .taskStatus {background: var(--green);}
+
+.userTaskWrap.is_done > .taskStatus > .clock {display: none;}
+
+.userTaskWrap > .taskStatus > .is_done_mes {display: none;}
+
+.userTaskWrap.is_done > .taskStatus > .is_done_mes {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+}
+
+.is_done_mes > span {
+    color: #fff;
+    /* display: flex;
+    display: -webkit-flex; */
+}
 
 
 /*Форма авторизации*/
